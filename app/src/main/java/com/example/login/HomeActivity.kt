@@ -11,8 +11,8 @@ class HomeActivity : AppCompatActivity() {
         setContentView(R.layout.activity_home)
 
         val id = intent.getStringExtra("dataFromId")
-        val id_text = findViewById<EditText>(R.id.id_text)
-        id_text.setText(id)
+        val idText = findViewById<EditText>(R.id.id_text)
+        idText.setText(id)
 
         val btn_close = findViewById<Button>(R.id.btn_close)
         btn_close.setOnClickListener {
