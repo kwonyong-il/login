@@ -17,7 +17,7 @@
         app:srcCompat="@android:drawable/sym_def_app_icon" />
 
     <TextView
-        android:id="@+id/id_name"
+        android:id="@+id/signin_id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -39,10 +39,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.506"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/id_name" />
+        app:layout_constraintTop_toBottomOf="@+id/signin_id" />
 
     <TextView
-        android:id="@+id/pw_name"
+        android:id="@+id/signin_pw"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -63,7 +63,7 @@
         android:textStyle="italic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pw_name" />
+        app:layout_constraintTop_toBottomOf="@+id/signin_pw" />
 
     <Button
         android:id="@+id/btn_login"
