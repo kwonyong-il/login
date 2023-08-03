@@ -14,8 +14,8 @@ class HomeActivity : AppCompatActivity() {
         val idText = findViewById<EditText>(R.id.id_text)
         idText.setText(id)
 
-        val btn_close = findViewById<Button>(R.id.btn_close)
-        btn_close.setOnClickListener {
+        val btnClose = findViewById<Button>(R.id.btn_close)
+        btnClose.setOnClickListener {
             finish()
         }
     }
