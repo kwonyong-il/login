@@ -3,10 +3,10 @@
     <item
         android:state_pressed="true"
         android:drawable="@drawable/button_out"
-        android:width= "40px"
-        android:height= "40px"/>
+        android:width="40dp"
+        android:height="40dp"/>
     <item
         android:drawable="@drawable/button_in"
-        android:width= "40px"
-        android:height= "40px"/>
+        android:width="40dp"
+        android:height="40dp"/>
 </selector>
