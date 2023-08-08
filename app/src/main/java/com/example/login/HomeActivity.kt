@@ -6,6 +6,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.constraintlayout.widget.ConstraintLayout
 import kotlin.random.Random
 
 class HomeActivity : AppCompatActivity() {
@@ -29,7 +30,7 @@ class HomeActivity : AppCompatActivity() {
         val idText = findViewById<TextView>(R.id.id_text)
         idText.text = "아이디 : $id"
 
-        val btnClose = findViewById<Button>(R.id.btn_close)
+        val btnClose = findViewById<ConstraintLayout>(R.id.btn_close)
         btnClose.setOnClickListener {
             finish()
         }
