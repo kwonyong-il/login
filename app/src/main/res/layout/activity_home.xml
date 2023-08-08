@@ -4,46 +4,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeActivity">\
+    tools:context=".HomeActivity">
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/random_img"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_marginTop="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/android1" />
+        app:srcCompat="@drawable/random1" />
 
-    <LinearLayout
-        android:id="@+id/linearLayout"
+    <TextView
+        android:id="@+id/id_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:gravity="center_vertical|center_horizontal"
-        android:orientation="horizontal"
+        android:textSize="18dp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3">
-
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="아이디 :"
-            android:textSize="18dp"
-            android:textStyle="bold" />
-
-        <EditText
-            android:id="@+id/id_text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@null"
-            android:inputType="text"
-            android:textSize="18dp"
-            android:textStyle="bold" />
-    </LinearLayout>
+        app:layout_constraintTop_toBottomOf="@+id/random_img" />
 
 
     <TextView
@@ -56,13 +38,13 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+        app:layout_constraintTop_toBottomOf="@+id/id_text" />
 
     <TextView
         android:id="@+id/home_age"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="28dp"
         android:text="나이 : 15"
         android:textSize="18dp"
         android:textStyle="bold"
@@ -83,15 +65,45 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/home_age" />
 
-    <Button
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/btn_close"
-        android:layout_width="320dp"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
         android:layout_marginBottom="50dp"
-        android:text="종료"
+        android:background="@drawable/home_btn"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/home_mbti">
 
+        <ImageView
+            android:id="@+id/btn_img"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/home_btn_img"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btn_text"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/btn_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="120dp"
+            android:text="종료"
+            android:textColor="@drawable/home_btn_text"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.529" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
